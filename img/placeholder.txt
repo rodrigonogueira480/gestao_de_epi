@@ -1,0 +1,7 @@
+Aqui você deve adicionar as seguintes imagens:
+
+1. logo.png - Logo da empresa de Gestão de EPI
+2. hero-image.jpg - Imagem principal para a seção hero
+3. eficiencia.jpg - Imagem para a seção de eficiência
+
+Você pode usar qualquer imagem relacionada a EPIs, segurança do trabalho ou gestão de equipamentos.
