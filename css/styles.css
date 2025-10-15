@@ -616,3 +616,285 @@ footer {
         justify-content: center;
     }
 }
+
+/* Painel Operacional */
+.painel {
+    background-color: white;
+}
+
+.painel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.painel-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.painel-kpis {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kpi-card {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 18px 22px;
+    min-width: 160px;
+}
+
+.kpi-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--gray-color);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kpi-card strong {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.painel-body {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+}
+
+.control-tabs {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.control-tabs .tab-btn {
+    border-bottom: 2px solid transparent;
+    border-radius: 999px;
+    padding: 10px 22px;
+    background-color: var(--light-color);
+}
+
+.control-tabs .tab-btn.active {
+    border-bottom-color: var(--primary-color);
+    background-color: rgba(0, 86, 179, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.panel-content {
+    display: none;
+}
+
+.form-card,
+.table-card {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 24px;
+}
+
+.form-card h3,
+.table-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    padding: 10px 12px;
+    border: 1px solid #dfe3eb;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.data-table thead th {
+    background: var(--light-color);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.data-table th,
+.data-table td {
+    border-bottom: 1px solid #e8edf5;
+    padding: 12px 14px;
+    text-align: left;
+}
+
+.data-table tbody tr:hover {
+    background: #f9fbff;
+}
+
+.data-table .empty {
+    text-align: center;
+    padding: 25px 0;
+    color: var(--gray-color);
+    font-style: italic;
+}
+
+.feature-list {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-color);
+}
+
+.feature-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.biometria {
+    background: var(--light-color);
+}
+
+.biometria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+
+.biometria-card {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 24px;
+}
+
+.biometria-card ol {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.biometria-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.biometria-card .note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.treinamentos-overview {
+    background: #fff;
+}
+
+.treinamentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.treinamento-card {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.treinamento-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px 12px;
+    border: 1px solid #dfe3eb;
+    border-radius: var(--border-radius);
+}
+
+@media (max-width: 992px) {
+    .painel-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .painel-body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .control-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .kpi-card {
+        width: 100%;
+    }
+}
